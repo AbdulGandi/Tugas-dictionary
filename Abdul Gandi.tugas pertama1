@@ -1,0 +1,25 @@
+print("DAFTAR NAMA BARANG YANG TERTERA DIBAWAH INI")
+print(" ' sepatu ' ")
+print(" ' sendal' ")
+print(" ' kopiyah' ")
+print(" ' surban' ")
+print(" ' sejadah' ")
+print(" ")
+
+# Kamus sederhana menggunakan dictionary
+kamus = {
+    "sepatu": "sepatu ini biasanya sering digunakan sekolah",
+    "sendal": "sendal ini digunakan untuk melindungi kaki",
+    "kopiyah": "kopiyah ini digunakan saat panas terik matahari",
+    "surban": "surban untuk alas beribadah",
+    "sejadah": "sejadah ini digunakan saat saat solat"
+}
+
+# Meminta input dari pengguna
+kata = input("silahkan masukkan jenis barang yang ingin dicari : ").lower()
+
+# Mencari dan menampilkan arti kata
+if kata in kamus:
+    print(f"jenis barang dari '{kata}' adalah: {kamus[kata]}")
+else:
+    print(f"Maaf, nama jenis barang yang dicari '{kata}' tidak ditemukan dalam kamus.")
